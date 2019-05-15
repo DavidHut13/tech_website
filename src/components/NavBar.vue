@@ -33,3 +33,12 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+#navbar {
+  position: fixed;
+  z-index: 999;
+  background: transparent;
+  box-shadow: none;
+}
+</style>

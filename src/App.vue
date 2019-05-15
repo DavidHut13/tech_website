@@ -52,13 +52,21 @@ export default {
         document.documentElement.scrollTop > 20
       ) {
         document.getElementById("myBtn").style.display = "block";
+        document.getElementById("navbar").style.background = "white";
+        document.getElementById("navbar").style.boxShadow =
+          "0 4px 8px 0 rgba(0, 0, 0, 0.8)";
+        document.getElementById("navbar").style.opacity = "0.7";
       } else {
         document.getElementById("myBtn").style.display = "none";
+        document.getElementById("navbar").style.background = "transparent";
+        document.getElementById("navbar").style.boxShadow = "none";
       }
     },
 
     topFunction() {
-      document.getElementById("navbar").scrollIntoView({ behavior: "smooth" });
+      document
+        .getElementById("jumbotron")
+        .scrollIntoView({ behavior: "smooth" });
     }
   }
 };
