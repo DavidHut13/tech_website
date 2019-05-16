@@ -54,7 +54,7 @@ export default {
         document.getElementById("myBtn").style.display = "block";
         document.getElementById("navbar").style.background = "white";
         document.getElementById("navbar").style.boxShadow =
-          "0 4px 8px 0 rgba(0, 0, 0, 0.8)";
+          "0 4px 8px 0 rgba(0, 0, 0, 0.3)";
         document.getElementById("navbar").style.opacity = "0.7";
       } else {
         document.getElementById("myBtn").style.display = "none";
@@ -92,7 +92,7 @@ body {
   padding: 15px; /* Some padding */
   border-radius: 50%; /* Rounded corners */
   font-size: 18px; /* Increase font size */
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
   width: 55px;
 }
 </style>

@@ -1,6 +1,8 @@
 <template>
   <section id="contact">
-    <v-form ref="form" v-model="form" class="pa-3 pt-4">
+    <h2>CONTACT US</h2>
+    <p>Got a question? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+    <v-form @submit.prevent="handleSubmit" ref="form" v-model="form" class="pa-3 pt-4">
       <v-text-field
         v-model="name"
         box
@@ -18,23 +20,24 @@
         type="email"
       ></v-text-field>
       <v-textarea v-model="message" box auto-grow color="deep-purple" label="Message" rows="5"></v-textarea>
+      <v-btn flat @click="$refs.form.reset()">Clear</v-btn>
+      <v-spacer></v-spacer>
+      <v-btn
+        :disabled="!form"
+        :loading="isLoading"
+        class="white--text"
+        color="deep-purple accent-4"
+        depressed
+        type="submit"
+      >Submit</v-btn>
     </v-form>
     <v-divider></v-divider>
-
-    <v-btn flat @click="$refs.form.reset()">Clear</v-btn>
-    <v-spacer></v-spacer>
-    <v-btn
-      :disabled="!form"
-      :loading="isLoading"
-      class="white--text"
-      color="deep-purple accent-4"
-      depressed
-    >Submit</v-btn>
   </section>
 </template>
 
 <script>
-import { setTimeout } from "timers";
+import axios from "axios";
+
 export default {
   name: "ContactForm",
   data() {
@@ -44,25 +47,62 @@ export default {
       },
       form: false,
       isLoading: false,
-      email: undefined,
-      message: undefined,
-      name: undefined
+      email: "",
+      message: "",
+      name: "",
+      sent: false
     };
   },
   methods: {
-    clearForm() {
-      for (let field in this.contact) {
-        this.contact[field] = "";
-      }
+    handleSubmit() {
+      let data = {
+        name: this.name,
+        email: this.email,
+        message: this.message
+      };
+
+      axios
+        .post("http://localhost:4444/api/v1", data)
+        .then(res => {
+          this.sent = true;
+          this.name = "";
+          this.email = "";
+          this.message = "";
+        })
+        .catch(err => console.log(err));
     }
-  },
-  onSubmit(evt) {
-    console.log("submitted");
   }
 };
 </script>
 
 <style lang="scss" scoped>
+section {
+  background: #fd8a66;
+  padding-top: 3rem;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: white;
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+  p {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 300;
+  }
+
+  form {
+    max-width: 53rem;
+    margin: 0 auto;
+    background: whitesmoke;
+    margin-bottom: 3rem;
+  }
+}
 </style>
 
 

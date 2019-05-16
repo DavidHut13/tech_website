@@ -54,7 +54,7 @@ p {
   color: rgba(97, 192, 230, 0.7);
   background: white;
   font-size: 30px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
 }
 
 .icon-ctn i::before {
