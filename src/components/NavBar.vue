@@ -2,10 +2,10 @@
   <v-toolbar id="navbar">
     <company-logo></company-logo>
     <v-spacer></v-spacer>
-    <v-toolbar-items>
-      <v-btn @click="scrollToAbout" flat>About Us</v-btn>
-      <v-btn @click="scrollToSell" flat>Services We Offer</v-btn>
-      <v-btn @click="scrollToContact" flat>Contact</v-btn>
+    <v-toolbar-items class="nav-items">
+      <v-btn class="nav-button" @click="scrollToAbout" flat>About Us</v-btn>
+      <v-btn class="nav-button" @click="scrollToSell" flat>Services We Offer</v-btn>
+      <v-btn class="nav-button" @click="scrollToContact" flat>Contact</v-btn>
     </v-toolbar-items>
   </v-toolbar>
 </template>
@@ -40,5 +40,10 @@ export default {
   z-index: 999;
   background: transparent;
   box-shadow: none;
+}
+
+.nav-items button {
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 </style>

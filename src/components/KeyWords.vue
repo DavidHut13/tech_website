@@ -2,21 +2,21 @@
   <v-container id="keywords-container" fluid>
     <v-layout justify-center row wrap>
       <div>
-        <p>Innovative IT Solutions</p>
+        <p class="p-title">Innovative IT Solutions</p>
         <div class="icon-ctn">
           <i class="far fa-lightbulb"></i>
         </div>
         <p>Lorem ipsum dolor sit amet.</p>
       </div>
       <div>
-        <p>Integrative</p>
+        <p class="p-title">Integrative</p>
         <div class="icon-ctn">
           <i class="fas fa-bolt"></i>
         </div>
         <p>Lorem ipsum dolor sit amet.</p>
       </div>
       <div>
-        <p>Collaborative</p>
+        <p class="p-title">Collaborative</p>
         <div class="icon-ctn">
           <i class="fas fa-users"></i>
         </div>
@@ -33,22 +33,32 @@ export default {
 </script>
 
 <style scoped>
-/* #keywords-container {
-  background: #195d7d;
-  color: white;
-} */
-
 .layout div {
   margin: 50px;
   text-align: center;
 }
 
+p {
+  font-size: 18px;
+  color: #333;
+}
+
+.p-title {
+  font-size: 28px;
+}
+
 .icon-ctn i {
   border-radius: 50%;
-  padding: 30px;
+  width: 6rem;
+  height: 6rem;
   color: rgba(97, 192, 230, 0.7);
   background: white;
-  font-size: 40px;
+  font-size: 30px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+}
+
+.icon-ctn i::before {
+  position: relative;
+  top: calc(50% - 14px);
 }
 </style>

@@ -1,10 +1,8 @@
 <template>
   <v-container id="we-sell">
-    <v-layout justify-space-between row>
-      <v-flex xs12>
-        <h2>What We Offer</h2>
-      </v-flex>
-    </v-layout>
+    <div>
+      <h2>WHAT WE OFFER</h2>
+    </div>
     <v-layout row>
       <v-flex align-self-center="true" xs3>
         <div>
@@ -65,6 +63,20 @@ export default {
 <style lang="scss" scoped>
 .layout {
   justify-content: center;
+}
+
+#we-sell {
+  div {
+    text-align: center;
+
+    h2 {
+      font-weight: 400;
+      font-size: 2.4rem;
+      letter-spacing: 5px;
+      margin-bottom: 4rem;
+      margin-top: 4rem;
+    }
+  }
 }
 
 img {

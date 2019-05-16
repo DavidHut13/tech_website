@@ -8,7 +8,12 @@
     <v-container fill-height>
       <v-layout align-center>
         <v-flex text-xs-center>
-          <h3 class="display-3">eLoanLogic</h3>
+          <h3
+            class="display-3"
+          >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, dignissimos.</h3>
+        </v-flex>
+        <v-flex text-xs-center>
+          <img src="../assets/web_maintenance.png" alt>
         </v-flex>
       </v-layout>
     </v-container>
@@ -26,3 +31,8 @@ export default {
 };
 </script>
 
+<style scoped>
+.display-3 {
+  font-size: 33px !important;
+}
+</style>

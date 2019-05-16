@@ -60,6 +60,7 @@ export default {
         document.getElementById("myBtn").style.display = "none";
         document.getElementById("navbar").style.background = "transparent";
         document.getElementById("navbar").style.boxShadow = "none";
+        document.getElementById("navbar").style.opacity = "1";
       }
     },
 
@@ -85,12 +86,13 @@ body {
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: #4cc1f6; /* Set a background color */
+  background-color: rgba(76, 193, 246, 0.6);
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */
   border-radius: 50%; /* Rounded corners */
   font-size: 18px; /* Increase font size */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+  width: 55px;
 }
 </style>

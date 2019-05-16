@@ -1,8 +1,5 @@
 <template>
-  <v-card class="mx-auto" style="max-width: 500px;">
-    <v-toolbar color="deep-purple accent-4" cards dark flat>
-      <v-card-title class="title font-weight-regular">Contact Us</v-card-title>
-    </v-toolbar>
+  <section id="contact">
     <v-form ref="form" v-model="form" class="pa-3 pt-4">
       <v-text-field
         v-model="name"
@@ -19,23 +16,21 @@
         label="Email address"
         :rules="[rules.email]"
         type="email"
-      >
-        <v-textarea v-model="message" auto-grow box color="deep-purple" label="Message" rows="1"></v-textarea>
-      </v-text-field>
+      ></v-text-field>
+      <v-textarea v-model="message" box auto-grow color="deep-purple" label="Message" rows="5"></v-textarea>
     </v-form>
     <v-divider></v-divider>
-    <v-card-actions>
-      <v-btn flat @click="$refs.form.reset()">Clear</v-btn>
-      <v-spacer></v-spacer>
-      <v-btn
-        :disabled="!form"
-        :loading="isLoading"
-        class="white--text"
-        color="deep-purple accent-4"
-        depressed
-      >Submit</v-btn>
-    </v-card-actions>
-  </v-card>
+
+    <v-btn flat @click="$refs.form.reset()">Clear</v-btn>
+    <v-spacer></v-spacer>
+    <v-btn
+      :disabled="!form"
+      :loading="isLoading"
+      class="white--text"
+      color="deep-purple accent-4"
+      depressed
+    >Submit</v-btn>
+  </section>
 </template>
 
 <script>
