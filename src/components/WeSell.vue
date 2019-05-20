@@ -4,9 +4,9 @@
       <h2>WHAT WE OFFER</h2>
     </div>
     <v-layout row>
-      <v-flex align-self-center="true" xs3>
+      <v-flex align-self-center="true" xs2>
         <div>
-          <p>www.LoanData.com (3 to 1)</p>
+          <p class="title">www.LoanData.com (3 to 1)</p>
           <p>From the moment the property is received all the way until it’s sold. Shovel snow, mow yards, etc. Asset (property) tracker.</p>
         </div>
       </v-flex>
@@ -20,25 +20,25 @@
       </v-flex>
     </v-layout>
     <v-layout row>
-      <v-flex xs6>
-        <div>
+      <v-flex xs4>
+        <div id="middle-pic">
           <img
             src="https://images.pexels.com/photos/160107/pexels-photo-160107.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
             alt
           >
         </div>
       </v-flex>
-      <v-flex align-self-center="true" xs3>
+      <v-flex align-self-center="true" xs2>
         <div>
-          <p>IPC</p>
+          <p class="title">IPC</p>
           <p>custom software that we created to track insurance claims. Look at photos, check out damages. Upload any document you want, can communicate it, talk to various insurance companies.</p>
         </div>
       </v-flex>
     </v-layout>
     <v-layout row>
-      <v-flex align-self-center="true" xs3>
+      <v-flex align-self-center="true" xs2>
         <div>
-          <p>Bidding Software</p>
+          <p class="title">Bidding Software</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel pariatur hic error quae voluptatum dignissimos asperiores dolorem velit, sunt rem!</p>
         </div>
       </v-flex>
@@ -75,6 +75,19 @@ export default {
       letter-spacing: 5px;
       margin-bottom: 4rem;
       margin-top: 4rem;
+    }
+
+    #middle-pic {
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+    }
+
+    .title {
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 16px;
     }
   }
 }

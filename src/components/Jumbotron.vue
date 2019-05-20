@@ -2,6 +2,7 @@
   <v-jumbotron
     id="jumbotron"
     :gradient="gradient"
+    height="600px"
     dark
     src="https://cdn.vuetifyjs.com/images/parallax/material2.jpg"
   >
@@ -11,9 +12,6 @@
           <h3
             class="display-3"
           >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, dignissimos.</h3>
-        </v-flex>
-        <v-flex text-xs-center>
-          <img src="../assets/web_maintenance.png" alt>
         </v-flex>
       </v-layout>
     </v-container>

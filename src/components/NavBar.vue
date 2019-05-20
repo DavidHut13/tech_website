@@ -43,7 +43,7 @@ export default {
 }
 
 .nav-items button {
-  font-weight: bold;
+  font-weight: 400;
   font-size: 1.2rem;
 }
 </style>
