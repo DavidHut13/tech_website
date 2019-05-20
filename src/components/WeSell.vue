@@ -4,13 +4,13 @@
       <h2>WHAT WE OFFER</h2>
     </div>
     <v-layout row>
-      <v-flex align-self-center="true" xs2>
+      <v-flex align-self-center="true" xs12 md2>
         <div>
           <p class="title">www.LoanData.com (3 to 1)</p>
           <p>From the moment the property is received all the way until it’s sold. Shovel snow, mow yards, etc. Asset (property) tracker.</p>
         </div>
       </v-flex>
-      <v-flex xs4>
+      <v-flex xs12 md4>
         <div>
           <img
             src="https://images.pexels.com/photos/160107/pexels-photo-160107.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
@@ -20,15 +20,15 @@
       </v-flex>
     </v-layout>
     <v-layout row>
-      <v-flex xs4>
+      <v-flex xs12 md4>
         <div id="middle-pic">
           <img
-            src="https://images.pexels.com/photos/160107/pexels-photo-160107.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            src="https://images.pexels.com/photos/1194713/pexels-photo-1194713.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
             alt
           >
         </div>
       </v-flex>
-      <v-flex align-self-center="true" xs2>
+      <v-flex align-self-center="true" xs12 md2>
         <div>
           <p class="title">IPC</p>
           <p>custom software that we created to track insurance claims. Look at photos, check out damages. Upload any document you want, can communicate it, talk to various insurance companies.</p>
@@ -36,16 +36,16 @@
       </v-flex>
     </v-layout>
     <v-layout row>
-      <v-flex align-self-center="true" xs2>
+      <v-flex align-self-center="true" xs12 md2>
         <div>
           <p class="title">Bidding Software</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel pariatur hic error quae voluptatum dignissimos asperiores dolorem velit, sunt rem!</p>
         </div>
       </v-flex>
-      <v-flex xs4>
+      <v-flex xs12 md4>
         <div>
           <img
-            src="https://images.pexels.com/photos/160107/pexels-photo-160107.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            src="https://images.pexels.com/photos/106344/pexels-photo-106344.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
             alt
           >
         </div>
@@ -61,8 +61,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.layout {
+.layout.row {
   justify-content: center;
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 }
 
 #we-sell {
@@ -88,6 +91,12 @@ export default {
 
     p {
       font-size: 16px;
+    }
+
+    img {
+      @media only screen and (max-width: 768px) {
+        width: 24rem;
+      }
     }
   }
 }

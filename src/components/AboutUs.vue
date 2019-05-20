@@ -83,15 +83,17 @@ export default {
   background-color: #2193c7;
   color: white;
   font-size: 16px;
-  // border-top-left-radius: 50% 20%;
   border-top-right-radius: 50% 20%;
   border-bottom-left-radius: 50% 20%;
-  // border-bottom-right-radius: 50% 20%;
   padding-top: 6.5rem;
   padding-bottom: 10rem;
 
   .container {
     width: 61%;
+    @media only screen and (max-width: 768px) {
+      //for mobile phones
+      width: 100%;
+    }
   }
 
   .bolded {

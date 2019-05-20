@@ -11,8 +11,11 @@ export default {
 </script>
 
 
-<style scoped>
+<style lang="scss" scoped>
 img {
   width: 5%;
+  @media only screen and (max-width: 768px) {
+    width: 12%;
+  }
 }
 </style>
