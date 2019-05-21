@@ -63,7 +63,7 @@ export default {
 
       axios
         .post("http://localhost:4444/api/v1", data)
-        .then(res => {
+        .then(() => {
           this.sent = true;
           this.name = "";
           this.email = "";
@@ -87,6 +87,14 @@ section {
     color: white;
     font-size: 2rem;
     font-weight: 400;
+  }
+  h2:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 7%;
+    padding-top: 10px;
+    border-bottom: 7px dotted #110672;
   }
 
   p {

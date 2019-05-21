@@ -5,7 +5,7 @@
         <h2>ABOUT US</h2>
       </div>
       <v-layout justify-space-around row>
-        <v-flex align-self-center="true" xs12 md6>
+        <v-flex class="left-section" align-self-center="true" xs12 md6>
           <div class="div-icon">
             <v-icon size="34px">fas fa-star</v-icon>
           </div>
@@ -14,7 +14,7 @@
             <p>badge accesses, employee terminations, phone issues, customer service</p>
           </div>
         </v-flex>
-        <v-flex align-self-center="true" xs12 md6>
+        <v-flex class="right-section" align-self-center="true" xs12 md6>
           <div class="div-icon">
             <v-icon size="34px">fas fa-smile</v-icon>
           </div>
@@ -25,7 +25,7 @@
         </v-flex>
       </v-layout>
       <v-layout justify-space-around row>
-        <v-flex align-self-center="true" xs12 md6>
+        <v-flex class="left-section" align-self-center="true" xs12 md6>
           <div class="div-icon">
             <v-icon size="34px">fas fa-network-wired</v-icon>
           </div>
@@ -34,7 +34,7 @@
             <p>oversees firewall switches, cyber attacks, phone systems</p>
           </div>
         </v-flex>
-        <v-flex align-self-center="true" xs12 md6>
+        <v-flex class="right-section" align-self-center="true" xs12 md6>
           <div class="div-icon">
             <v-icon size="34px">fas fa-wrench</v-icon>
           </div>
@@ -45,7 +45,7 @@
         </v-flex>
       </v-layout>
       <v-layout justify-space-around row>
-        <v-flex align-self-center="true" xs12 md6>
+        <v-flex class="left-section" align-self-center="true" xs12 md6>
           <div class="div-icon">
             <v-icon size="34px">far fa-clock</v-icon>
           </div>
@@ -54,7 +54,7 @@
             <p>tracks the trends of profit and loss, funds, tracks all the money</p>
           </div>
         </v-flex>
-        <v-flex align-self-center="true" xs12 md6>
+        <v-flex class="right-section" align-self-center="true" xs12 md6>
           <div class="div-icon">
             <v-icon size="34px">fas fa-phone</v-icon>
           </div>
@@ -65,7 +65,7 @@
         </v-flex>
       </v-layout>
       <v-layout justify-space-around row>
-        <v-flex align-self-center="true" xs12 md6>
+        <v-flex class="left-section" align-self-center="true" xs12 md6>
           <div class="div-icon">
             <v-icon size="34px">fas fa-laptop-code</v-icon>
           </div>
@@ -74,7 +74,7 @@
             <p>oversees all the databases, keeps them efficient and streamlined</p>
           </div>
         </v-flex>
-        <v-flex align-self-center="true" xs12 md6>
+        <v-flex class="right-section" align-self-center="true" xs12 md6>
           <div class="div-icon">
             <v-icon size="34px">fas fa-chart-line</v-icon>
           </div>
@@ -115,6 +115,26 @@ export default {
       @media only screen and (max-width: 768px) {
         //for mobile phones
         flex-direction: column;
+      }
+
+      i {
+        margin-right: 1rem;
+      }
+
+      .left-section {
+        margin-right: 1rem;
+        @media only screen and (max-width: 768px) {
+          //for mobile phones
+          margin-right: 0rem;
+        }
+      }
+
+      .right-section {
+        margin-left: 1rem;
+        @media only screen and (max-width: 768px) {
+          //for mobile phones
+          margin-left: 0rem;
+        }
       }
     }
 
