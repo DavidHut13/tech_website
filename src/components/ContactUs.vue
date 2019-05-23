@@ -9,6 +9,7 @@
         color="deep-purple"
         label="Name"
         style="min-heigh: 96px"
+        :rules="[rules.required]"
         type="text"
       ></v-text-field>
       <v-text-field
@@ -19,7 +20,15 @@
         :rules="[rules.email]"
         type="email"
       ></v-text-field>
-      <v-textarea v-model="message" box auto-grow color="deep-purple" label="Message" rows="5"></v-textarea>
+      <v-textarea
+        v-model="message"
+        :rules="[rules.required]"
+        box
+        auto-grow
+        color="deep-purple"
+        label="Message"
+        rows="5"
+      ></v-textarea>
       <v-btn flat @click="$refs.form.reset()">Clear</v-btn>
       <v-spacer></v-spacer>
       <v-btn
@@ -43,7 +52,8 @@ export default {
   data() {
     return {
       rules: {
-        email: v => (v || "").match(/@/) || "Please enter a valid email"
+        email: v => (v || "").match(/@/) || "Please enter a valid email",
+        required: value => !!value || "Required."
       },
       form: false,
       isLoading: false,
