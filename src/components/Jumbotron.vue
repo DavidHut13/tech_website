@@ -1,5 +1,6 @@
 <template>
   <v-jumbotron
+    data-aos="fade-in"
     id="jumbotron"
     :gradient="gradient"
     height="600px"

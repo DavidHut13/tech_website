@@ -1,5 +1,5 @@
 <template>
-  <v-container id="we-sell">
+  <v-container data-aos="slide-left" id="we-sell">
     <div>
       <h2>WHAT WE OFFER</h2>
     </div>

@@ -1,5 +1,5 @@
 <template>
-  <div id="about-us">
+  <div data-aos="fade-in" id="about-us">
     <v-container>
       <div id="about-header">
         <h2>ABOUT US</h2>
