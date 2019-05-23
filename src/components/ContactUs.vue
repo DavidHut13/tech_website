@@ -1,38 +1,40 @@
 <template>
-  <section id="contact">
-    <h2>CONTACT US</h2>
-    <p>Got a question? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
-    <v-form @submit.prevent="handleSubmit" ref="form" v-model="form" class="pa-3 pt-4">
-      <v-text-field
-        v-model="name"
-        box
-        color="deep-purple"
-        label="Name"
-        style="min-heigh: 96px"
-        type="text"
-      ></v-text-field>
-      <v-text-field
-        v-model="email"
-        box
-        color="deep-purple"
-        label="Email address"
-        :rules="[rules.email]"
-        type="email"
-      ></v-text-field>
-      <v-textarea v-model="message" box auto-grow color="deep-purple" label="Message" rows="5"></v-textarea>
-      <v-btn flat @click="$refs.form.reset()">Clear</v-btn>
-      <v-spacer></v-spacer>
-      <v-btn
-        :disabled="!form"
-        :loading="isLoading"
-        class="white--text"
-        color="deep-purple accent-4"
-        depressed
-        type="submit"
-      >Submit</v-btn>
-    </v-form>
-    <v-divider></v-divider>
-  </section>
+  <transition appear name="bounce">
+    <section id="contact">
+      <h2>CONTACT US</h2>
+      <p>Got a question? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+      <v-form @submit.prevent="handleSubmit" ref="form" v-model="form" class="pa-3 pt-4">
+        <v-text-field
+          v-model="name"
+          box
+          color="deep-purple"
+          label="Name"
+          style="min-heigh: 96px"
+          type="text"
+        ></v-text-field>
+        <v-text-field
+          v-model="email"
+          box
+          color="deep-purple"
+          label="Email address"
+          :rules="[rules.email]"
+          type="email"
+        ></v-text-field>
+        <v-textarea v-model="message" box auto-grow color="deep-purple" label="Message" rows="5"></v-textarea>
+        <v-btn flat @click="$refs.form.reset()">Clear</v-btn>
+        <v-spacer></v-spacer>
+        <v-btn
+          :disabled="!form"
+          :loading="isLoading"
+          class="white--text"
+          color="deep-purple accent-4"
+          depressed
+          type="submit"
+        >Submit</v-btn>
+      </v-form>
+      <v-divider></v-divider>
+    </section>
+  </transition>
 </template>
 
 <script>
@@ -112,6 +114,24 @@ section {
     margin-bottom: 3rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 10px;
+  }
+
+  .bounce-enter-active {
+    animation: bounce-in 0.5s;
+  }
+  .bounce-leave-active {
+    animation: bounce-in 0.5s reverse;
+  }
+  @keyframes bounce-in {
+    0% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
   }
 }
 </style>
