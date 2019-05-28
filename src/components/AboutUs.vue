@@ -118,7 +118,8 @@ export default {
       }
 
       i {
-        margin-right: 1rem;
+        margin-right: 2.5rem;
+        width: 1rem;
       }
 
       .left-section {
