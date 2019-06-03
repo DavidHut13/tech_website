@@ -2,7 +2,7 @@
   <v-footer id="footer" dark height="auto">
     <v-card class="white--text text-xs-center">
       <v-card-text>
-        <company-logo></company-logo>
+        <h2>eLoanLogic.</h2>
       </v-card-text>
       <v-card-text>
         <v-btn v-for="icon in icons" :key="icon" class="mx-3 white--text" icon>
@@ -18,7 +18,7 @@
 
       <v-card-text class="white--text">
         &copy;2019 —
-        <strong>eLoanLogic</strong>
+        <strong>eLoanLogic.</strong>
       </v-card-text>
     </v-card>
   </v-footer>
@@ -49,6 +49,11 @@ export default {
 <style scoped>
 .theme--dark.v-sheet {
   background: #22272e;
+}
+
+h2 {
+  font-family: "Kaushan Script", cursive;
+  font-size: 2rem;
 }
 </style>
 

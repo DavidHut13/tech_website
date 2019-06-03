@@ -8,8 +8,11 @@
     src="https://cdn.vuetifyjs.com/images/parallax/material2.jpg"
   >
     <v-container fill-height>
-      <v-layout align-center>
+      <v-layout id="jumb-content-ctnr" align-center>
         <v-flex text-xs-center>
+          <img src="../assets/web_maintenance.png">
+        </v-flex>
+        <v-flex text-xs-right>
           <h3
             class="display-3"
           >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, dignissimos.</h3>
@@ -30,8 +33,30 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .display-3 {
   font-size: 33px !important;
+  @media only screen and (max-width: 768px) {
+    //for mobile phones
+    font-size: 24px !important;
+    text-align: center;
+  }
+}
+
+#jumb-content-ctnr {
+  @media only screen and (max-width: 768px) {
+    //for mobile phones
+    display: block;
+    margin-top: 10rem;
+  }
+
+  img {
+    @media only screen and (max-width: 768px) {
+      //for mobile phones
+      width: 102%;
+    }
+  }
 }
 </style>
+
+

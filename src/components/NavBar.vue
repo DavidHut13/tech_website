@@ -1,6 +1,6 @@
 <template>
   <v-toolbar id="navbar">
-    <company-logo></company-logo>
+    <h1>eLoanLogic.</h1>
     <v-spacer></v-spacer>
     <v-toolbar-items class="nav-items hidden-sm-and-down">
       <v-btn
@@ -56,6 +56,11 @@ export default {
   z-index: 999;
   background: transparent;
   box-shadow: none;
+}
+
+#navbar h1 {
+  font-family: "Kaushan Script", cursive;
+  font-size: 2rem;
 }
 
 .nav-items button {

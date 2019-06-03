@@ -6,7 +6,8 @@
         <div class="icon-ctn">
           <i class="far fa-lightbulb"></i>
         </div>
-        <p>Lorem ipsum dolor sit amet.</p>
+        <p>IT Support, Networking, Maintenance,</p>
+        <p>& Web Development</p>
       </div>
       <div>
         <p class="p-title">Integrative</p>
