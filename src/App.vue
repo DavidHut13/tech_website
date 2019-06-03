@@ -4,7 +4,7 @@
     <v-tooltip top>
       <template v-slot:activator="{ on }">
         <v-btn bottom right fixed fab @click="topFunction()" id="myBtn" v-on="on">
-          <i class="fas fa-arrow-up"></i>
+          <v-icon>mdi-chevron-up</v-icon>
         </v-btn>
       </template>
       <span>Return to top</span>
@@ -84,20 +84,13 @@ body {
 }
 
 #myBtn {
-  display: none; /* Hidden by default */
-  // position: fixed; /* Fixed/sticky position */
-  // bottom: 20px; /* Place the button at the bottom of the page */
-  // right: 30px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
+  display: none;
+  z-index: 99;
+  border: none;
   background-color: rgba(76, 193, 246, 0.8);
-  color: white; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  // padding: 15px; /* Some padding */
-  // border-radius: 50%; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
-  // width: 55px;
 }
 </style>

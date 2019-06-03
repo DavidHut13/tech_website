@@ -42,10 +42,13 @@ export default {
 p {
   font-size: 18px;
   color: #333;
+  font-weight: 300;
 }
 
 .p-title {
   font-size: 28px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .icon-ctn i {

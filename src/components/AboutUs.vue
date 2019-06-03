@@ -96,13 +96,17 @@ export default {
 
 <style lang="scss" scoped>
 #about-us {
-  background-color: #2193c7;
+  background: linear-gradient(
+    90deg,
+    rgba(33, 147, 199, 1) 0%,
+    rgb(77, 196, 248) 100%
+  );
   color: white;
   font-size: 16px;
   border-top-right-radius: 50% 20%;
   border-bottom-left-radius: 50% 20%;
-  padding-top: 6.5rem;
-  padding-bottom: 10rem;
+  padding-top: 0.5rem;
+  padding-bottom: 5rem;
 
   .container {
     width: 61%;
@@ -120,10 +124,12 @@ export default {
       i {
         margin-right: 2.5rem;
         width: 1rem;
+        color: #100856;
       }
 
       .left-section {
         margin-right: 1rem;
+        margin-top: 1rem;
         @media only screen and (max-width: 768px) {
           //for mobile phones
           margin-right: 0rem;
@@ -132,6 +138,7 @@ export default {
 
       .right-section {
         margin-left: 1rem;
+        margin-top: 1rem;
         @media only screen and (max-width: 768px) {
           //for mobile phones
           margin-left: 0rem;
@@ -148,13 +155,22 @@ export default {
   }
 
   .bolded {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 20px;
+    color: #110672;
+    text-transform: uppercase;
+    letter-spacing: 2px;
   }
 
   #about-header {
     text-align: center;
     padding-bottom: 4.5rem;
+    letter-spacing: 4px;
+    font-size: 2.5rem;
+
+    h2 {
+      font-weight: 300;
+    }
 
     h2:after {
       content: "";

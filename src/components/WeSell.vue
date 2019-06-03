@@ -87,6 +87,9 @@ export default {
 
     .title {
       font-size: 20px;
+      text-transform: uppercase;
+      font-weight: 200;
+      letter-spacing: 2px;
     }
 
     p {
