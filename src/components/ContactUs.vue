@@ -122,6 +122,11 @@ section {
     margin-bottom: 3rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 10px;
+
+    @media only screen and (max-width: 768px) {
+      //for mobile phones
+      border-radius: 0%;
+    }
   }
 }
 </style>

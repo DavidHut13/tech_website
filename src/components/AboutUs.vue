@@ -108,6 +108,11 @@ export default {
   padding-top: 0.5rem;
   padding-bottom: 5rem;
 
+  @media only screen and (max-width: 768px) {
+    //for mobile phones
+    border-radius: 0%;
+    padding-bottom: 0;
+  }
   .container {
     width: 61%;
     @media only screen and (max-width: 768px) {
