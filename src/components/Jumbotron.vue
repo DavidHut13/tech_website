@@ -3,21 +3,18 @@
     data-aos="fade-in"
     id="jumbotron"
     :gradient="gradient"
-    height="600px"
+    position="bottom"
+    height="700px"
     dark
-    src="https://cdn.vuetifyjs.com/images/parallax/material2.jpg"
+    src="https://images.pexels.com/photos/1029606/pexels-photo-1029606.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
   >
     <v-container fill-height>
       <v-layout id="jumb-content-ctnr" align-center>
-        <v-flex text-xs-center>
-          <img src="../assets/web_maintenance.png">
-        </v-flex>
         <v-flex text-xs-right>
           <h3 class="display-3">
             We create high quality
             <strong>digital solutions.</strong>
           </h3>
-          <p>eLoanLogic provides cutting-edge technology solutions to organizations of all sizes. With deep expertise and end-to-end capabilities, we’ll help your business run smarter.</p>
         </v-flex>
       </v-layout>
     </v-container>
@@ -29,7 +26,7 @@ export default {
   name: "Jumbotron",
   data() {
     return {
-      gradient: "to top right, rgba(63,81,181, .7), rgba(25,32,72, .7)"
+      // gradient: "to top right, rgba(63,81,181, .7), rgba(25,32,72, .7)"
     };
   }
 };
@@ -37,9 +34,9 @@ export default {
 
 <style lang="scss" scoped>
 .display-3 {
-  font-size: 3rem !important;
+  font-size: 3.5rem !important;
   font-weight: 200;
-  color: white;
+  color: black;
   @media only screen and (max-width: 768px) {
     //for mobile phones
     font-size: 24px !important;
@@ -61,6 +58,9 @@ export default {
   }
 
   img {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
     @media only screen and (max-width: 768px) {
       //for mobile phones
       width: 102%;

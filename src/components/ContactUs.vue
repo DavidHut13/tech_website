@@ -120,7 +120,9 @@ section {
     margin: 0 auto;
     background: whitesmoke;
     margin-bottom: 3rem;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border: 1px solid #eceff1;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),
+      0 1px 3px 1px rgba(60, 64, 67, 0.15);
     border-radius: 10px;
 
     @media only screen and (max-width: 768px) {

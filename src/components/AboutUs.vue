@@ -103,9 +103,7 @@ export default {
   );
   color: white;
   font-size: 16px;
-  border-top-right-radius: 50% 20%;
-  border-bottom-left-radius: 50% 20%;
-  padding-top: 0.5rem;
+  padding-top: 5rem;
   padding-bottom: 5rem;
 
   @media only screen and (max-width: 768px) {
@@ -115,6 +113,12 @@ export default {
   }
   .container {
     width: 61%;
+    background: white;
+    color: black;
+    border-radius: 1rem;
+    border: 1px solid #eceff1;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),
+      0 1px 3px 1px rgba(60, 64, 67, 0.15);
     @media only screen and (max-width: 768px) {
       //for mobile phones
       width: 100%;
@@ -126,10 +130,18 @@ export default {
         flex-direction: column;
       }
 
+      .div-icon {
+        margin-right: 1rem;
+      }
+
       i {
-        margin-right: 2.5rem;
-        width: 1rem;
         color: #100856;
+        background: #ff8a65;
+        margin: 0 auto;
+        padding: 1rem;
+        color: white;
+        font-size: 2rem;
+        border-radius: 50%;
       }
 
       .left-section {
