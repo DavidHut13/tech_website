@@ -1,5 +1,5 @@
 <template>
-  <v-toolbar id="navbar">
+  <v-toolbar @mouseover="mouseOver" id="navbar">
     <h1>eLoanLogic.</h1>
     <v-spacer></v-spacer>
     <v-toolbar-items class="nav-items hidden-sm-and-down">
@@ -45,6 +45,9 @@ export default {
   methods: {
     scrollToContent(id) {
       document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+    },
+    mouseOver() {
+      document.getElementById("navbar").style.opacity = "1";
     }
   }
 };
@@ -61,6 +64,10 @@ export default {
 #navbar h1 {
   font-family: "Kaushan Script", cursive;
   font-size: 2rem;
+}
+
+#navbar:hover {
+  background: white;
 }
 
 .nav-items button {

@@ -7,7 +7,7 @@
       <v-layout justify-space-around row>
         <v-flex class="left-section" align-self-center="true" xs12 md6>
           <div class="div-icon">
-            <v-icon size="34px">fas fa-star</v-icon>
+            <v-icon size="34px">fas fa-star fa-fw</v-icon>
           </div>
           <div>
             <p class="bolded">Help Desk Services</p>
@@ -16,7 +16,7 @@
         </v-flex>
         <v-flex class="right-section" align-self-center="true" xs12 md6>
           <div class="div-icon">
-            <v-icon size="34px">fas fa-smile</v-icon>
+            <v-icon size="34px">fas fa-smile fa-fw</v-icon>
           </div>
           <div>
             <p class="bolded">System Administrator</p>
@@ -27,7 +27,7 @@
       <v-layout justify-space-around row>
         <v-flex class="left-section" align-self-center="true" xs12 md6>
           <div class="div-icon">
-            <v-icon size="34px">fas fa-network-wired</v-icon>
+            <v-icon size="34px">fas fa-network-wired fa-fw</v-icon>
           </div>
           <div>
             <p class="bolded">Network Administrator</p>
@@ -36,7 +36,7 @@
         </v-flex>
         <v-flex class="right-section" align-self-center="true" xs12 md6>
           <div class="div-icon">
-            <v-icon size="34px">fas fa-wrench</v-icon>
+            <v-icon size="34px">fas fa-wrench fa-fw</v-icon>
           </div>
           <div>
             <p class="bolded">Development</p>
@@ -47,7 +47,7 @@
       <v-layout justify-space-around row>
         <v-flex class="left-section" align-self-center="true" xs12 md6>
           <div class="div-icon">
-            <v-icon size="34px">far fa-clock</v-icon>
+            <v-icon size="34px">far fa-clock fa-fw</v-icon>
           </div>
           <div>
             <p class="bolded">Procurement Analyst</p>
@@ -56,7 +56,7 @@
         </v-flex>
         <v-flex class="right-section" align-self-center="true" xs12 md6>
           <div class="div-icon">
-            <v-icon size="34px">fas fa-phone</v-icon>
+            <v-icon size="34px">fas fa-phone fa-fw</v-icon>
           </div>
           <div>
             <p class="bolded">Report Writer</p>
@@ -67,7 +67,7 @@
       <v-layout justify-space-around row>
         <v-flex class="left-section" align-self-center="true" xs12 md6>
           <div class="div-icon">
-            <v-icon size="34px">fas fa-laptop-code</v-icon>
+            <v-icon size="34px">fas fa-laptop-code fa-fw</v-icon>
           </div>
           <div>
             <p class="bolded">Database Administrator</p>
@@ -76,7 +76,7 @@
         </v-flex>
         <v-flex class="right-section" align-self-center="true" xs12 md6>
           <div class="div-icon">
-            <v-icon size="34px">fas fa-chart-line</v-icon>
+            <v-icon size="34px">fas fa-chart-line fa-fw</v-icon>
           </div>
           <div>
             <p class="bolded">Senior IT Project Manager</p>
@@ -96,13 +96,8 @@ export default {
 
 <style lang="scss" scoped>
 #about-us {
-  background: linear-gradient(
-    90deg,
-    rgba(33, 147, 199, 1) 0%,
-    rgb(77, 196, 248) 100%
-  );
-  color: white;
-  font-size: 16px;
+  background: #55d6be;
+  // font-size: 16px;
   padding-top: 5rem;
   padding-bottom: 5rem;
 
@@ -136,11 +131,15 @@ export default {
 
       i {
         color: #100856;
-        background: #ff8a65;
+        background: #ff8552;
         margin: 0 auto;
-        padding: 1rem;
+        // padding: 1rem;
+        padding: 10px;
         color: white;
-        font-size: 2rem;
+        // display: inline-block;
+        width: 4rem;
+        // text-align: center;
+        // font-size: 2rem;
         border-radius: 50%;
       }
 
@@ -172,11 +171,15 @@ export default {
   }
 
   .bolded {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 20px;
-    color: #110672;
-    text-transform: uppercase;
+    color: black;
     letter-spacing: 2px;
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 300;
   }
 
   #about-header {
@@ -195,7 +198,7 @@ export default {
       margin: 0 auto;
       width: 7%;
       padding-top: 10px;
-      border-bottom: 7px dotted #110672;
+      border-bottom: 7px dotted #2e5eaa;
     }
   }
 }

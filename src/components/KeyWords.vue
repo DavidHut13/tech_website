@@ -48,14 +48,14 @@ p {
 .p-title {
   font-size: 28px;
   letter-spacing: 1px;
-  text-transform: uppercase;
+  font-weight: 400;
 }
 
 .icon-ctn i {
   border-radius: 50%;
   width: 6rem;
   height: 6rem;
-  color: rgba(97, 192, 230, 0.7);
+  color: rgba(46, 94, 170, 0.7);
   background: white;
   font-size: 30px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);

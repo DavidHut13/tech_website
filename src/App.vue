@@ -88,7 +88,7 @@ body {
   display: none;
   z-index: 99;
   border: none;
-  background-color: rgba(76, 193, 246, 0.8);
+  background-color: rgba(255, 133, 82, 0.8);
   color: white;
   cursor: pointer;
   font-size: 18px;

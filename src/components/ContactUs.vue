@@ -87,7 +87,7 @@ export default {
 
 <style lang="scss" scoped>
 section {
-  background: #fd8a66;
+  background: #2e5eaa;
   padding-top: 3rem;
   margin-top: 4rem;
 
@@ -104,7 +104,7 @@ section {
     margin: 0 auto;
     width: 7%;
     padding-top: 10px;
-    border-bottom: 7px dotted #110672;
+    border-bottom: 7px dotted #55d6be;
   }
 
   p {

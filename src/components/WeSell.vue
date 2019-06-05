@@ -1,7 +1,7 @@
 <template>
   <v-container data-aos="slide-left" id="we-sell">
     <div>
-      <h2>WHAT WE OFFER</h2>
+      <h2>What we offer</h2>
     </div>
     <v-layout row>
       <v-flex align-self-center="true" xs12 lg6>
@@ -73,7 +73,7 @@ export default {
     text-align: center;
 
     h2 {
-      font-weight: 400;
+      font-weight: 500;
       font-size: 2.4rem;
       letter-spacing: 5px;
       margin-bottom: 4rem;
@@ -87,13 +87,20 @@ export default {
 
     .title {
       font-size: 20px;
-      text-transform: uppercase;
-      font-weight: 200;
+      font-weight: 400;
       letter-spacing: 2px;
+      margin: 0 auto;
     }
 
     p {
       font-size: 16px;
+      font-weight: 300;
+      width: 30rem;
+      margin: 0 auto;
+
+      @media only screen and (max-width: 768px) {
+        width: auto;
+      }
     }
 
     img {
