@@ -11,7 +11,7 @@
           </div>
           <div>
             <p class="bolded">Help Desk Services</p>
-            <p>badge accesses, employee terminations, phone issues, customer service</p>
+            <p>24/7 Support and technical assistance for IT</p>
           </div>
         </v-flex>
         <v-flex class="right-section" align-self-center="true" xs12 md6>
@@ -20,7 +20,7 @@
           </div>
           <div>
             <p class="bolded">System Administrator</p>
-            <p>server patching, hacking & cyber attacks, assures our systems are current</p>
+            <p>Performance security and efficiency of infrastructure</p>
           </div>
         </v-flex>
       </v-layout>
@@ -31,7 +31,7 @@
           </div>
           <div>
             <p class="bolded">Network Administrator</p>
-            <p>oversees firewall switches, cyber attacks, phone systems</p>
+            <p>Diagnosis, implementation, and maintenance of Network Systems.</p>
           </div>
         </v-flex>
         <v-flex class="right-section" align-self-center="true" xs12 md6>
@@ -40,7 +40,7 @@
           </div>
           <div>
             <p class="bolded">Development</p>
-            <p>full-stack development, can integrate with anybody on anything. Create websites, custom software</p>
+            <p>Design, install, test, and maintain custom software solutions.</p>
           </div>
         </v-flex>
       </v-layout>
@@ -51,7 +51,7 @@
           </div>
           <div>
             <p class="bolded">Procurement Analyst</p>
-            <p>tracks the trends of profit and loss, funds, tracks all the money</p>
+            <p>Sourcing, vetting, and negotiating vendors and contracts</p>
           </div>
         </v-flex>
         <v-flex class="right-section" align-self-center="true" xs12 md6>
@@ -60,7 +60,7 @@
           </div>
           <div>
             <p class="bolded">Report Writer</p>
-            <p>does all kinds of custom reports and automates them if she can. SSRS specialist.</p>
+            <p>Data extraction and analysis for report creation and database needs.</p>
           </div>
         </v-flex>
       </v-layout>
@@ -71,7 +71,7 @@
           </div>
           <div>
             <p class="bolded">Database Administrator</p>
-            <p>oversees all the databases, keeps them efficient and streamlined</p>
+            <p>Performance, integrity, and security of databases</p>
           </div>
         </v-flex>
         <v-flex class="right-section" align-self-center="true" xs12 md6>
@@ -80,7 +80,7 @@
           </div>
           <div>
             <p class="bolded">Senior IT Project Manager</p>
-            <p>manages infrastructure and development</p>
+            <p>Delivering leadership for projects, assessing issues, risks, and change to deliver on time results.</p>
           </div>
         </v-flex>
       </v-layout>

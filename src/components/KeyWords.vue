@@ -2,26 +2,25 @@
   <v-container id="keywords-container" fluid>
     <v-layout justify-center row wrap>
       <div>
-        <p class="p-title">Innovative IT Solutions</p>
+        <p class="p-title">Innovative</p>
         <div class="icon-ctn">
           <i class="far fa-lightbulb"></i>
         </div>
-        <p>IT Support, Networking, Maintenance,</p>
-        <p>& Web Development</p>
+        <p>Advanced IT Solutions</p>
       </div>
       <div>
         <p class="p-title">Integrative</p>
         <div class="icon-ctn">
           <i class="fas fa-bolt"></i>
         </div>
-        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Business + Technology</p>
       </div>
       <div>
         <p class="p-title">Collaborative</p>
         <div class="icon-ctn">
           <i class="fas fa-users"></i>
         </div>
-        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Expectations Meet Standards</p>
       </div>
     </v-layout>
   </v-container>

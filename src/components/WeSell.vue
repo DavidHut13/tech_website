@@ -31,7 +31,7 @@
       <v-flex align-self-center="true" xs12 lg6>
         <div>
           <p class="title">IPC</p>
-          <p>custom software that we created to track insurance claims. Look at photos, check out damages. Upload any document you want, can communicate with it, talk to various insurance companies.</p>
+          <p>Customized insurance claims software. View, upload, download, and communicate to track progress from start to finish.</p>
         </div>
       </v-flex>
     </v-layout>

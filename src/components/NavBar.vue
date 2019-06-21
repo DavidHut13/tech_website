@@ -26,13 +26,8 @@
 </template>
 
 <script>
-import CompanyLogo from "../components/CompanyLogo";
-
 export default {
   name: "NavBar",
-  components: {
-    CompanyLogo
-  },
   data() {
     return {
       menu: [

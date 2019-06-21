@@ -42,6 +42,9 @@ export default {
     font-size: 24px !important;
     text-align: center;
   }
+  @media screen and (min-width: 1830px) {
+    margin-bottom: 5rem;
+  }
 }
 
 #jumb-content-ctnr {
