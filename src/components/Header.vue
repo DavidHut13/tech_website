@@ -1,9 +1,9 @@
 <template>
 <b-container class="navWrapper" fluid>
     <b-row>
-        <b-col >
-            <b-navbar   toggleable="xl">
-                <b-navbar-brand  href="#">
+        <b-col>
+            <b-navbar id="navbar" fixed="top" toggleable="xl">
+                <b-navbar-brand href="#">
                     <router-link to="/"> <img class="logo-img" src="/img/TestLogo.png" alt="logo"></router-link>
                 </b-navbar-brand>
                 <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -12,18 +12,19 @@
                         <!-- <router-link class="mx-3" to="/"  tag="b-nav-item">Home</router-link>
                         <router-link class="mx-3" to="/"  tag="b-nav-item">Services</router-link>
                         <router-link class="mx-3" to="/"   tag="b-nav-item">About</router-link> -->
-                        
+
                     </b-navbar-nav>
                     <b-button class="contactBtn ml-auto" to="/" @click="showModal">Contact Us</b-button>
                 </b-collapse>
             </b-navbar>
-           <contact-form></contact-form>
+            <contact-form></contact-form>
         </b-col>
     </b-row>
 </b-container>
 </template>
 
 <script>
+
 import contactForm from './contactForm.vue'
 export default {
     name: "Header",
@@ -36,42 +37,58 @@ export default {
         contactForm,
     },
     methods: {
-        showModal(){
+        showModal() {
             this.$bvModal.show('my-modal')
         },
-        hideModal(){
+        hideModal() {
             this.$bvModal.show('my-modal')
-        }
+        },
     }
+
 }
 </script>
 
 <style>
-img {
-    width: 200px;
+
+.navbar-background{
+    color:grey;
 }
 
-.modal{
-      overflow: scroll;
+.hide{
+    background:red;
 }
-.contactBtn{
+img {
+    width: 150px;
+}
+
+.stickyNav {
+    background: rgba(236, 107, 107, 0.884);
+}
+
+.modal {
+    overflow: scroll;
+}
+
+.contactBtn {
     background-image: linear-gradient(to right, #f6d365, #f7be49, #f9a72f, #fb8f16, #fd7302);
     border-radius: 20px;
-    border:none;
+    border: none;
     -webkit-box-shadow: 0px 7px 29px -16px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 7px 29px -16px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 7px 29px -16px rgba(0, 0, 0, 0.75);
 }
-.btn.contactBtn{
-    border-radius:20px;
+
+.btn.contactBtn {
+    border-radius: 20px;
     padding: 8px 20px 8px 20px;
-    border:none;
+    border: none;
 }
+
 .contactBtn:hover {
     -webkit-box-shadow: 0px 3px 28px -5px rgba(255, 102, 0, 1);
     -moz-box-shadow: 0px 3px 28px -5px rgba(255, 102, 0, 1);
     box-shadow: 0px 3px 28px -5px rgba(255, 102, 0, 1);
-    border:none;
+    border: none;
 }
 
 .nav-item.contactBtn a.nav-link {
@@ -82,6 +99,4 @@ img {
 .nav-item.contactBtn a.nav-link:hover {
     color: white;
 }
-
-
 </style>

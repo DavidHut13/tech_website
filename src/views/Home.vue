@@ -153,7 +153,8 @@ export default {
     },
     destroyed() {
         AOS.refresh();
-    }
+    },
+
 }
 </script>
 
