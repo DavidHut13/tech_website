@@ -1,59 +1,95 @@
 <template>
-  <v-footer id="footer" dark height="auto">
-    <v-card class="white--text text-xs-center">
-      <v-card-text>
-        <h2>eLoanLogic.</h2>
-      </v-card-text>
-      <v-card-text>
-        <v-btn v-for="icon in icons" :key="icon" class="mx-3 white--text" icon>
-          <v-icon size="24px">{{ icon }}</v-icon>
-        </v-btn>
-      </v-card-text>
+<div>
+    <b-container>
+        <b-row>
+            <b-col cols="4" offset="2" offset-md="2" md="2">
+                <div class="text-left">
+                    <h4 class="pt-4 footerHeader">About</h4>
+                    <p class="footerLink">contact</p>
+                    <p class="footerLink">Partners</p>
+                    <p class="footerLink">Support</p>
+                </div>
+            </b-col>
+            <b-col cols="4" md="3" class="solutionsWrapper">
+                <div class="text-left">
+                    <h4 class="pt-4 footerHeader">Solutions</h4>
+                    <p class="footerLink">Help Desk</p>
+                    <p class="footerLink">Database Solutions</p>
+                    <p class="footerLink">Development</p>
+                    <p class="footerLink">Phone & Email Support</p>
+                </div>
+            </b-col>
+            <b-col class="mb-5 text-center" cols="12"  md="3">
+                <div class=" SocialLinksFooter">
+                    <div>
+                        <img class="pt-4 pb-4 footerLogo" src="/img/TestLogo.png">
+                    </div>
+                    <!-- <b-link href="https://www.facebook.com/AuctionNetwork"><i class="social_icon px-2 fab fa-facebook fa-2x"></i></b-link>
+                    <b-link href="https://www.linkedin.com/company/auctionnetwork.com"><i class="social_icon px-2 fab fa-linkedin fa-2x"></i></b-link>
+                    <b-link href="https://twitter.com/AuctionNetwork"><i class="social_icon px-2 fab fa-twitter-square fa-2x"></i></b-link>
+                    <b-link href="https://www.youtube.com/user/AuctionNetwork"><i class="social_icon px-2 fab fa-youtube fa-2x"></i></b-link> -->
+                </div>
+            </b-col>
+        </b-row>
+        <p class="pt-4 text-center">
+            helpdesk@eloanLogic.com
+            Phone: 817.428.0000
+            Address: 6032 Innovation Way, Fort Worth TX, 76244
+        </p>
+    </b-container>
 
-      <v-card-text
-        class="white--text pt-0"
-      >Phasellus feugiat arcu sapien, et iaculis ipsum elementum sit amet. Mauris cursus commodo interdum. Praesent ut risus eget metus luctus accumsan id ultrices nunc. Sed at orci sed massa consectetur dignissim a sit amet dui. Duis commodo vitae velit et faucibus. Morbi vehicula lacinia malesuada. Nulla placerat augue vel ipsum ultrices, cursus iaculis dui sollicitudin. Vestibulum eu ipsum vel diam elementum tempor vel ut orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</v-card-text>
-
-      <v-divider></v-divider>
-
-      <v-card-text class="white--text">
-        &copy;2019 —
-        <strong>eLoanLogic.</strong>
-      </v-card-text>
-    </v-card>
-  </v-footer>
+</div>
 </template>
 
 <script>
-import CompanyLogo from "./CompanyLogo";
-
 export default {
-  name: "AppFooter",
-  components: {
-    CompanyLogo
-  },
-  data() {
-    return {
-      icons: [
-        "fab fa-facebook",
-        "fab fa-twitter",
-        "fab fa-google-plus",
-        "fab fa-linkedin",
-        "fab fa-instagram"
-      ]
-    };
-  }
-};
+    name: "appFooter",
+    data() {
+        return {
+
+        }
+    }
+}
 </script>
 
 <style scoped>
-.theme--dark.v-sheet {
-  background: #22272e;
+@media screen and (min-width: 768px) {
+    .solutionsWrapper {
+        border-right: 1px solid black;
+    }
+
 }
 
-h2 {
-  font-family: "Kaushan Script", cursive;
-  font-size: 2rem;
+.bottomFooter {
+    color: rgb(41, 39, 39);
+    height: 100%;
+    width: 100%;
+    font-size: 1.8vh;
+
+}
+
+.footerLine {
+    color: black;
+}
+
+.footerLink {
+    margin-bottom: 0;
+}
+
+.footerHeader {
+    color: rgb(253, 130, 30);
+}
+
+.footerLogo {
+    width: 170px;
+    margin: 0;
+}
+
+.social_icon {
+    color: black;
+}
+
+.social_icon:hover {
+    color: rgb(85, 84, 84);
 }
 </style>
-
