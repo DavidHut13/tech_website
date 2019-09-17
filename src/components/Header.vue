@@ -38,10 +38,10 @@ export default {
     },
     methods: {
         showModal() {
-            this.$bvModal.show('my-modal')
+            this.$bvModal.show('contact-modal')
         },
         hideModal() {
-            this.$bvModal.show('my-modal')
+            this.$bvModal.hide('contact-modal')
         },
     }
 

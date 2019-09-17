@@ -1,6 +1,6 @@
 <template>
 <b-container>
-    <b-modal size="lg" centered hide-footer hide-header id="my-modal">
+    <b-modal size="lg" centered hide-footer hide-header id="contact-modal">
         <b-row>
             <b-col cols="5">
                 <b-card class="text-center shadow-sm">
@@ -29,10 +29,11 @@
                 <b-form-group>
                     <b-form-input class="my-2 inputBox" placeholder="First Name" v-model="senderName"></b-form-input>
                     <b-form-input class="my-3 inputBox" placeholder="Email" v-model="senderEmail" id="input-default"></b-form-input>
-                    <b-form-textarea class="inputBox" v-model="senderMessage" placeholder="Your Message" rows="3" max-rows="6"></b-form-textarea>
+                    <b-form-textarea class="inputBox" v-model="senderMessage" placeholder="Your Message" rows="3" no-resize></b-form-textarea>
                 </b-form-group>
                 <div class="text-center">
-                    <b-button block @click="showModal" class="sendBtn">Send</b-button>
+                    <b-button @click="hideModal" class="cancelBtn mx-1">Cancel</b-button>
+                    <b-button @click="showModal" class="sendBtn mx-1">Send</b-button>
                 </div>
             </b-col>
         </b-row>
@@ -63,10 +64,10 @@ export default {
     },
     methods: {
         showModal() {
-            this.$bvModal.show('my-modal')
+            this.$bvModal.show('contact-modal')
         },
         hideModal() {
-            this.$bvModal.show('my-modal')
+            this.$bvModal.hide('contact-modal')
         }
     }
 
@@ -81,10 +82,11 @@ export default {
 
 
 .inputBox {
-    border-radius: 5px;
-    -webkit-box-shadow: inset 0px 0px 16px -12px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: inset 0px 0px 16px -12px rgba(0, 0, 0, 0.75);
-    box-shadow: inset 0px 0px 16px -12px rgba(0, 0, 0, 0.75);
+    border-radius: 15px;
+-webkit-box-shadow: 0px 0px 10px -9px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 10px -9px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 10px -9px rgba(0,0,0,0.75);
+  
 }
 
 .orange {
@@ -100,31 +102,38 @@ export default {
 }
 
 .cancelBtn {
-    background-image: linear-gradient(to left, #fd3869 0%, #fa908c 100%);
-    border: none;
-    padding: 5px 20px 5px 20px;
+    background:white;
+    color:rgb(255, 112, 112);
+    border-color:rgb(255, 112, 112);
+    padding: 4px 15px 4px 15px;
     position: relative;
     -webkit-box-shadow: 0px 7px 29px -16px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 7px 29px -16px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 7px 29px -16px rgba(0, 0, 0, 0.75);
-
+}
+.cancelBtn:hover {
+    background:rgb(255, 112, 112);
+    color:white;
+    border-color:rgb(255, 112, 112);
+    position: relative;
+    -webkit-box-shadow: 0px 7px 29px -16px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 7px 29px -16px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 7px 29px -16px rgba(0, 0, 0, 0.75);
 }
 
 .sendBtn {
     background-image: linear-gradient(to right, #f6d365, #f7be49, #f9a72f, #fb8f16, #fd7302);
-    border: none;
     padding: 5px 20px 5px 20px;
+    border:none;
     position: relative;
     -webkit-box-shadow: 0px 7px 29px -16px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 7px 29px -16px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 7px 29px -16px rgba(0, 0, 0, 0.75);
-
 }
 
 .sendBtn:hover {
     -webkit-box-shadow: 0px 3px 18px -5px rgba(255, 102, 0, 1);
     -moz-box-shadow: 0px 3px 18px -5px rgba(255, 102, 0, 1);
     box-shadow: 0px 3px 18px -5px rgba(255, 102, 0, 1);
-    border-color: #fb8f16;
 }
 </style>

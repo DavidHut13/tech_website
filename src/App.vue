@@ -11,10 +11,8 @@
 $(window).on("scroll", function() {
   if ($(window).scrollTop() >= 300) {
     $(navbar).addClass("navbar-background");
-    console.log("class was added")
   } else {
-    $(navbar).removeClass("navbar-background");
-    console.log("class was removed")
+    $(navbar).removeClass("navbar-background"); 
   }
 });
 
@@ -26,10 +24,6 @@ function wheel(event) {
   var delta = 0;
   if (event.wheelDelta) delta = event.wheelDelta / 120;
   else if (event.detail) delta = -event.detail / 3;
-
-  handle(delta);
-  if (event.preventDefault) event.preventDefault();
-  event.returnValue = false;
 }
 
 var goUp = true;
