@@ -83,7 +83,7 @@
                     <div class="flexCenter">
                         <i class="flexCenter icon-circle mt-5 mb-3 fas fa-server fa-3x"></i>
                     </div>
-                    <h4 class="serviceTitle">Service 1</h4>
+                    <h4 class="serviceTitle">System Admin</h4>
                     <p class="text-left servicePara">With an ecommerce solution in your website, your customers can view your storefront through their PC or mobile device at anytime and anywhere they prefer.</p>
                 </b-card>
             </b-col>
@@ -92,7 +92,7 @@
                     <div class="flexCenter">
                         <i class="flexCenter icon-circle mt-5 mb-3 fas fa-code fa-3x"></i>
                     </div>
-                    <h4 class="serviceTitle">Service 2</h4>
+                    <h4 class="serviceTitle">Software Development</h4>
                     <p class="text-left servicePara">With an ecommerce solution in your website, your customers can view your storefront through their PC or mobile device at anytime and anywhere they prefer.</p>
                 </b-card>
             </b-col>
@@ -101,7 +101,7 @@
                     <div class="flexCenter">
                         <i class="flexCenter icon-circle mt-5 mb-3 fas fa-network-wired fa-3x"></i>
                     </div>
-                    <h4 class="serviceTitle">Service 3</h4>
+                    <h4 class="serviceTitle">Network Admin</h4>
                     <p class="text-left servicePara">With an ecommerce solution in your website, your customers can view your storefront through their PC or mobile device at anytime and anywhere they prefer.</p>
                 </b-card>
             </b-col>
@@ -110,7 +110,7 @@
                     <div class="flexCenter">
                         <i class="flexCenter icon-circle mt-5 mb-3 fas fa-database fa-3x"></i>
                     </div>
-                    <h4 class="serviceTitle">Service 4</h4>
+                    <h4 class="serviceTitle">Database Admin</h4>
                     <p class="text-left servicePara">With an ecommerce solution in your website, your customers can view your storefront through their PC or mobile device at anytime and anywhere they prefer.</p>
                 </b-card>
             </b-col>
@@ -119,7 +119,7 @@
                     <div class="flexCenter">
                         <i class="flexCenter icon-circle icon mt-5 mb-3 fas fa-desktop fa-3x"></i>
                     </div>
-                    <h4 class="serviceTitle">Service 5</h4>
+                    <h4 class="serviceTitle">Procurement</h4>
                     <p class="text-left servicePara">With an ecommerce solution in your website, your customers can view your storefront through their PC or mobile device at anytime and anywhere they prefer.</p>
                 </b-card>
             </b-col>
@@ -128,7 +128,7 @@
                     <div class="flexCenter">
                         <i class="flexCenter icon-circle icon mt-5 mb-3 fas fa-phone fa-3x"></i>
                     </div>
-                    <h4 class="serviceTitle">Service 6</h4>
+                    <h4 class="serviceTitle">Help Desk</h4>
                     <p class="text-left servicePara">With an ecommerce solution in your website, your customers can view your storefront through their PC or mobile device at anytime and anywhere they prefer.</p>
                 </b-card>
             </b-col>
