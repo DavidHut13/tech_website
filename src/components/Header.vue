@@ -12,7 +12,6 @@
                         <!-- <router-link class="mx-3" to="/"  tag="b-nav-item">Home</router-link>
                         <router-link class="mx-3" to="/"  tag="b-nav-item">Services</router-link>
                         <router-link class="mx-3" to="/"   tag="b-nav-item">About</router-link> -->
-
                     </b-navbar-nav>
                     <b-button class="contactBtn ml-auto" to="/" @click="showModal">Contact Us</b-button>
                 </b-collapse>

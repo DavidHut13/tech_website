@@ -12,7 +12,7 @@
                             <h6 class="text-left subSlogan">Doing some work for us.</h6>
                         </div>
                         <div class="orangeFont boldFont mt-4">
-                            <div v-scroll-to="'#services'" class="solutionHeader mr-3">Our Service</div>
+                            <div v-scroll-to="'#services'" class="solutionHeader mr-3">Our Service's</div>
                             <div v-scroll-to="'#aboutUs'" class="solutionHeader">About Us</div>
                         </div>
                     </div>
@@ -23,7 +23,7 @@
     <b-container>
         <b-row>
             <b-col id="aboutUs">
-                <b-row   class="clientsWrapper">
+                <b-row class="clientsWrapper">
                     <b-col cols="12">
                         <div class="mb-3">
                             <h2 data-aos="fade-right" class="headerTitle">Our Clients.</h2>
@@ -31,24 +31,24 @@
                         </div>
                     </b-col>
                     <b-col data-aos="fade-right" data-aos-delay="50" class="m-auto text-center " cols="6" md="2" o lg="2" offset="1">
-                        <div class="circle-1 circle flexCenter bounce  my-3">
-                            <b-img fluid class="clients " src="/img/home/ww-logo.png"></b-img>
-                        </div>
+                            <b-link class="circle-1 circle flexCenter bounce  my-3" href="https://www.williamsauction.com" target="_blank">
+                                <b-img fluid class="clients " src="/img/home/ww-logo.png"></b-img>
+                            </b-link>
                     </b-col>
                     <b-col data-aos="fade-right" data-aos-delay="100" class="m-auto text-center" cols="6" md="2" lg="2">
-                        <div class="circle-2 circle flexCenter bounce my-3">
+                        <b-link class="circle-2 circle flexCenter bounce my-3" href="https://www.auctionnetwork.com/" target="_blank">
                             <b-img fluid class="clients" src="/img/home/AN-Logo.png"></b-img>
-                        </div>
+                        </b-link>
                     </b-col>
                     <b-col data-aos="fade-right" data-aos-delay="150" class="m-auto text-center" cols="6" md="2" lg="2">
-                        <div class="circle-3  circle flexCenter bounce  my-3">
+                        <b-link class="circle-3  circle flexCenter bounce  my-3" href="https://www.msionline.com/#/home" target="_blank">
                             <b-img fluid class="clients roundedCorner" md="3" src="/img/home/MSILogo1.jpg"></b-img>
-                        </div>
+                        </b-link>
                     </b-col>
                     <b-col data-aos="fade-right" data-aos-delay="200" id="IPClogo" class="m-auto text-center" cols="6" md="2" offset-md="1" lg="2">
-                        <div class="circle-4 circle flexCenter bounce  my-3 ">
+                        <b-link class="circle-4 circle flexCenter bounce  my-3" href="https://ipropertyclaims.com/#/Home" target="_blank">
                             <b-img fluid class="clients roundedCorner" src="/img/home/IPCLogo.png"></b-img>
-                        </div>
+                        </b-link>
                     </b-col>
                 </b-row>
                 <b-row class="aboutUsWrapper">
@@ -56,14 +56,14 @@
                         <div>
                             <div data-aos="fade-right" data-aos-delay="200">
                                 <h2 id="aboutHeader" class="headerTitle">Who We Are.</h2>
-                            </div >
+                            </div>
                             <hr data-aos="fade-right" data-aos-delay="300" id="aboutUnderline" class="underlineAbout">
                             <div data-aos="fade-right" data-aos-delay="100">
                                 <p id="aboutPara" class="text-left aboutPara">Doing some work for us "pro bono" will really add to your portfolio i promise it looks a bit empty, try to make everything bigger, for I really like the colour but can you change it I have printed it out, but the animated gif is not moving. We try your eye, but can you change everything? that sandwich needs to be more playful I need a website.</p>
                             </div>
                         </div>
                     </b-col>
-                    <b-col  id="aboutImg" md="6">
+                    <b-col id="aboutImg" md="6">
                         <div data-aos="fade-right">
                             <b-img class="serverIllustration" src="/img/home/databaseGraphic.png"></b-img>
                         </div>
@@ -148,7 +148,7 @@ export default {
     },
     mounted() {
         import('aos').then(AOS => AOS.init({
-            once:true,
+            once: true,
         }));
     },
     destroyed() {

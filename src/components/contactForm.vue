@@ -82,7 +82,7 @@ export default {
 
 
 .inputBox {
-    border-radius: 15px;
+    border-radius: 20px;
 -webkit-box-shadow: 0px 0px 10px -9px rgba(0,0,0,0.75);
 -moz-box-shadow: 0px 0px 10px -9px rgba(0,0,0,0.75);
 box-shadow: 0px 0px 10px -9px rgba(0,0,0,0.75);
@@ -103,6 +103,7 @@ box-shadow: 0px 0px 10px -9px rgba(0,0,0,0.75);
 
 .cancelBtn {
     background:white;
+    border-radius:15px;
     color:rgb(255, 112, 112);
     border-color:rgb(255, 112, 112);
     padding: 4px 15px 4px 15px;
@@ -125,6 +126,7 @@ box-shadow: 0px 0px 10px -9px rgba(0,0,0,0.75);
     background-image: linear-gradient(to right, #f6d365, #f7be49, #f9a72f, #fb8f16, #fd7302);
     padding: 5px 20px 5px 20px;
     border:none;
+    border-radius:15px;
     position: relative;
     -webkit-box-shadow: 0px 7px 29px -16px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 7px 29px -16px rgba(0, 0, 0, 0.75);
