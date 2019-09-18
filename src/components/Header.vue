@@ -2,7 +2,7 @@
 <b-container class="navWrapper" fluid>
     <b-row>
         <b-col>
-            <b-navbar id="navbar" fixed="top" toggleable="xl">
+            <b-navbar id="navbar" fixed="top" toggleable="md">
                 <b-navbar-brand href="#">
                     <router-link to="/"> <img class="logo-img" src="/img/TestLogo.png" alt="logo"></router-link>
                 </b-navbar-brand>
