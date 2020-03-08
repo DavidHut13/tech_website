@@ -9,7 +9,7 @@
 <script>
 // Scrolling Effect
 $(window).on("scroll", function() {
-  if ($(window).scrollTop() >= 300) {
+  if ($(window).scrollTop() >= 5) {
     $(navbar).addClass("navbar-background");
   } else {
     $(navbar).removeClass("navbar-background"); 
@@ -85,6 +85,7 @@ export default {
 -webkit-box-shadow: 0px 10px 18px -19px rgba(0,0,0,0.75);
 -moz-box-shadow: 0px 10px 18px -19px rgba(0,0,0,0.75);
 box-shadow: 0px 10px 18px -19px rgba(0,0,0,0.75);
+transition:all .3s ease-in
 
 }
 </style>

@@ -75,18 +75,27 @@ export default {
 </script>
 
 <style scoped>
+.logo-img {
+    max-width: 220px;
+}
+
 .card.login-card {
     border: none;
 }
 
-
-
 .inputBox {
     border-radius: 20px;
--webkit-box-shadow: 0px 0px 10px -9px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 0px 10px -9px rgba(0,0,0,0.75);
-box-shadow: 0px 0px 10px -9px rgba(0,0,0,0.75);
-  
+    -webkit-box-shadow: 0px 0px 10px -9px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 10px -9px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 10px -9px rgba(0, 0, 0, 0.75);
+
+}
+
+.form-control:focus {
+    border-color: rgba(255, 102, 0, 1);
+    -webkit-box-shadow: 0px 0px 25px -10px rgba(255, 102, 0, 1);
+    -moz-box-shadow: 0px 0px 25px -10px rgba(255, 102, 0, 1);
+    box-shadow: 0px 0px 20px -10px rgba(255, 102, 0, 1);
 }
 
 .orange {
@@ -102,20 +111,21 @@ box-shadow: 0px 0px 10px -9px rgba(0,0,0,0.75);
 }
 
 .cancelBtn {
-    background:white;
-    border-radius:15px;
-    color:rgb(255, 112, 112);
-    border-color:rgb(255, 112, 112);
+    background: white;
+    border-radius: 15px;
+    color: rgb(255, 112, 112);
+    border-color: rgb(255, 112, 112);
     padding: 4px 15px 4px 15px;
     position: relative;
     -webkit-box-shadow: 0px 7px 29px -16px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 7px 29px -16px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 7px 29px -16px rgba(0, 0, 0, 0.75);
 }
+
 .cancelBtn:hover {
-    background:rgb(255, 112, 112);
-    color:white;
-    border-color:rgb(255, 112, 112);
+    background: rgb(255, 112, 112);
+    color: white;
+    border-color: rgb(255, 112, 112);
     position: relative;
     -webkit-box-shadow: 0px 7px 29px -16px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 7px 29px -16px rgba(0, 0, 0, 0.75);
@@ -125,8 +135,8 @@ box-shadow: 0px 0px 10px -9px rgba(0,0,0,0.75);
 .sendBtn {
     background-image: linear-gradient(to right, #f6d365, #f7be49, #f9a72f, #fb8f16, #fd7302);
     padding: 5px 20px 5px 20px;
-    border:none;
-    border-radius:15px;
+    border: none;
+    border-radius: 15px;
     position: relative;
     -webkit-box-shadow: 0px 7px 29px -16px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 7px 29px -16px rgba(0, 0, 0, 0.75);

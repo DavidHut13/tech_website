@@ -6,13 +6,13 @@
                 <b-col id="home" class="mainContentWrapper" cols="12">
                     <vue-particles class="particleCanvas" color="#000000" :particleOpacity="0.3" :particlesNumber="80" shapeType="circle" :particleSize="4" linesColor="#060606" :linesWidth="1" :lineLinked="true" :lineOpacity="0.4" :linesDistance="130" :moveSpeed="3" :hoverEffect="true" :clickEffect="false">
                     </vue-particles>
-                    <div class="mainTextWrapper mb-5">
+                    <div class="mainTextWrapper my-5">
                         <div>
-                            <h1 class="text-left mainSlogan">Creating Logic</h1>
-                            <h6 class="text-left subSlogan">Doing some work for us.</h6>
+                            <h1 class="text-left mainSlogan">Logical Solutions</h1>
+                            <h6 class="text-left subSlogan">Saving Time & money.</h6>
                         </div>
-                        <div class="orangeFont boldFont mt-4">
-                            <div v-scroll-to="'#services'" class="solutionHeader mr-3">Our Service's</div>
+                        <div class="orangeFont boldFont mt-3">
+                            <div v-scroll-to="'#services'" class="solutionHeader mr-3">Solutions</div>
                             <div v-scroll-to="'#aboutUs'" class="solutionHeader">About Us</div>
                         </div>
                     </div>
@@ -81,7 +81,7 @@
             <b-col data-aos="fade-right" data-aos-delay="100" cols="12" md="6" lg="4">
                 <b-card class="my-3">
                     <div class="flexCenter">
-                        <i class="flexCenter icon-circle mt-5 mb-3 fas fa-server fa-3x"></i>
+                        <i class="flexCenter icon-circle my-5 fas fa-server fa-3x"></i>
                     </div>
                     <h4 class="serviceTitle">System Admin</h4>
                     <p class="text-left servicePara">With an ecommerce solution in your website, your customers can view your storefront through their PC or mobile device at anytime and anywhere they prefer.</p>
@@ -90,7 +90,7 @@
             <b-col data-aos="fade-right" data-aos-delay="200" cols="12" md="6" lg="4">
                 <b-card class="my-3">
                     <div class="flexCenter">
-                        <i class="flexCenter icon-circle mt-5 mb-3 fas fa-code fa-3x"></i>
+                        <i class="flexCenter icon-circle my-5 fas fa-code fa-3x"></i>
                     </div>
                     <h4 class="serviceTitle">Software Development</h4>
                     <p class="text-left servicePara">With an ecommerce solution in your website, your customers can view your storefront through their PC or mobile device at anytime and anywhere they prefer.</p>
@@ -99,7 +99,7 @@
             <b-col data-aos="fade-right" data-aos-delay="300" cols="12" md="6" lg="4" class="my-3">
                 <b-card>
                     <div class="flexCenter">
-                        <i class="flexCenter icon-circle mt-5 mb-3 fas fa-network-wired fa-3x"></i>
+                        <i class="flexCenter icon-circle my-5 fas fa-network-wired fa-3x"></i>
                     </div>
                     <h4 class="serviceTitle">Network Admin</h4>
                     <p class="text-left servicePara">With an ecommerce solution in your website, your customers can view your storefront through their PC or mobile device at anytime and anywhere they prefer.</p>
@@ -108,7 +108,7 @@
             <b-col data-aos="fade-right" data-aos-delay="100" cols="12" md="6" lg="4">
                 <b-card class="my-3">
                     <div class="flexCenter">
-                        <i class="flexCenter icon-circle mt-5 mb-3 fas fa-database fa-3x"></i>
+                        <i class="flexCenter icon-circle my-5 fas fa-database fa-3x"></i>
                     </div>
                     <h4 class="serviceTitle">Database Admin</h4>
                     <p class="text-left servicePara">With an ecommerce solution in your website, your customers can view your storefront through their PC or mobile device at anytime and anywhere they prefer.</p>
@@ -117,7 +117,7 @@
             <b-col data-aos="fade-right" data-aos-delay="200" cols="12" md="6" lg="4">
                 <b-card class="my-3">
                     <div class="flexCenter">
-                        <i class="flexCenter icon-circle icon mt-5 mb-3 fas fa-desktop fa-3x"></i>
+                        <i class="flexCenter icon-circle icon my-5 fas fa-desktop fa-3x"></i>
                     </div>
                     <h4 class="serviceTitle">Procurement</h4>
                     <p class="text-left servicePara">With an ecommerce solution in your website, your customers can view your storefront through their PC or mobile device at anytime and anywhere they prefer.</p>
@@ -126,7 +126,7 @@
             <b-col data-aos="fade-right" data-aos-delay="300" cols="12" md="6" lg="4">
                 <b-card class="my-3">
                     <div class="flexCenter">
-                        <i class="flexCenter icon-circle icon mt-5 mb-3 fas fa-phone fa-3x"></i>
+                        <i class="flexCenter icon-circle icon my-5 fas fa-phone fa-3x"></i>
                     </div>
                     <h4 class="serviceTitle">Help Desk</h4>
                     <p class="text-left servicePara">With an ecommerce solution in your website, your customers can view your storefront through their PC or mobile device at anytime and anywhere they prefer.</p>
@@ -304,6 +304,7 @@ export default {
     display: inline;
     padding: 7px 20px 7px 20px;
     border-radius: 30px;
+    margin-left:-15px;
 }
 
 .underline {
