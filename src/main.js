@@ -5,11 +5,10 @@ import axios from 'axios'
 import VueAxios from 'vue-axios'
 import VueRouter from 'vue-router'
 import {routes} from './routes.js'
-import VueParticles from 'vue-particles'
+
 import vueScrollto from 'vue-scrollto'
 import 'aos/dist/aos.css'
 
-Vue.use(VueParticles)
 Vue.use(BootstrapVue)
 Vue.use(VueAxios, axios);
 Vue.use(vueScrollto)

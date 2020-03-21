@@ -23,17 +23,13 @@
                     <div>
                         <img class="pt-4 pb-4 footerLogo" src="/img/TestLogo.png">
                     </div>
-                    <!-- <b-link href="https://www.facebook.com/AuctionNetwork"><i class="social_icon px-2 fab fa-facebook fa-2x"></i></b-link>
-                    <b-link href="https://www.linkedin.com/company/auctionnetwork.com"><i class="social_icon px-2 fab fa-linkedin fa-2x"></i></b-link>
-                    <b-link href="https://twitter.com/AuctionNetwork"><i class="social_icon px-2 fab fa-twitter-square fa-2x"></i></b-link>
-                    <b-link href="https://www.youtube.com/user/AuctionNetwork"><i class="social_icon px-2 fab fa-youtube fa-2x"></i></b-link> -->
                 </div>
             </b-col>
         </b-row>
         <p class="pt-4 text-center">
-            helpdesk@eloanLogic.com
-            Phone: 817.428.0000
-            Address: 6032 Innovation Way, Fort Worth TX, 76244
+            help@eLogic.com
+            Phone: 867.530.9000
+            Address: 1234 Innovate, Austin TX, 78652
         </p>
     </b-container>
 
@@ -52,12 +48,12 @@ export default {
 </script>
 
 <style scoped>
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
     .solutionsWrapper {
         border-right: 1px solid black;
     }
 
-}
+} */
 
 .bottomFooter {
     color: rgb(41, 39, 39);
