@@ -39,6 +39,13 @@ export default {
 </script>
 
 <style scoped>
+@media (max-width:767px) {
+    .navbar {
+        padding-left:.5rem;
+        padding-right:.5rem;
+    }
+}
+
 .navbar {
     height: 60px;
 }
@@ -67,7 +74,7 @@ export default {
 
 .contactBtn:hover {
     color: white;
-    transform:scale(1.02);
+    transform: scale(1.02);
     -webkit-box-shadow: 0px 5px 10px -2px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0px 5px 10px -2px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 5px 10px -2px rgba(0, 0, 0, 0.2);

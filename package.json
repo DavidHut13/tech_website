@@ -4,10 +4,7 @@
   "private": true,
   "scripts": {
     "serve-dev": "vue-cli-service       serve  --mode local",
-    "build-dev": "npx vue-cli-service   build  --mode dev --dest dist",
-    "build-qa": "npx vue-cli-service    build  --mode qa --dest dist",
-    "build-prod": "npx vue-cli-service  build  --mode prod --dest dist",
-    "lint": "vue-cli-service lint"
+    "build": "vue-cli-service build"
   },
   "dependencies": {
     "aos": "^3.0.0-beta.6",

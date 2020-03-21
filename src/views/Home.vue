@@ -88,12 +88,12 @@ export default {
 
     .landingImage {
         width: 70% !important;
-        margin-bottom: -5rem;
+        margin-bottom: -3rem;
     }
 
     .mainContentWrapper {
         order: 2;
-        margin-top: -5rem;
+        margin-top: -3rem;
     }
 
     .aboutWrapper {

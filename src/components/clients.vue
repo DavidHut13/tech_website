@@ -1,27 +1,27 @@
 <template>
-<b-row class="clientsWrapper">
+<b-row class="clientsWrapper ">
     <b-col cols="12">
         <div class="mb-3">
             <h2 data-aos="fade-right" class="headerTitle">Our Clients.</h2>
             <hr data-aos="fade-right" data-aos-delay="300" class="underline">
         </div>
     </b-col>
-    <b-col data-aos="fade-right" data-aos-delay="50" class="m-auto text-center " cols="6" md="2" o lg="2" offset="1">
+    <b-col data-aos="fade-right" data-aos-delay="50" class="m-auto flexCenter" cols="6" offset="0" md="2"  lg="2" offset-md="1">
         <b-link class="circle-1 circle flexCenter bounce my-3" href="https://www.williamsauction.com" target="_blank">
             <b-img fluid class="clients " src="/img/home/ww-logo.png"></b-img>
         </b-link>
     </b-col>
-    <b-col data-aos="fade-right" data-aos-delay="100" class="m-auto text-center" cols="6" md="2" lg="2">
+    <b-col data-aos="fade-right" data-aos-delay="100" class="m-auto flexCenter" cols="6" md="2" lg="2">
         <b-link class="circle-2 circle flexCenter my-3" href="https://www.auctionnetwork.com/" target="_blank">
             <b-img fluid class="clients" src="/img/home/AN-Logo.png"></b-img>
         </b-link>
     </b-col>
-    <b-col data-aos="fade-right" data-aos-delay="150" class="m-auto text-center" cols="6" md="2" lg="2">
+    <b-col data-aos="fade-right" data-aos-delay="150" class="m-auto flexCenter" cols="6" md="2" lg="2">
         <b-link class="circle-3  circle flexCenter my-3" href="https://www.msionline.com/#/home" target="_blank">
             <b-img fluid class="clients roundedCorner" md="3" src="/img/home/MSILogo1.jpg"></b-img>
         </b-link>
     </b-col>
-    <b-col data-aos="fade-right" data-aos-delay="200" id="IPClogo" class="m-auto text-center" cols="6" md="2" offset-md="1" lg="2">
+    <b-col data-aos="fade-right" data-aos-delay="200" id="IPClogo" class="m-auto flexCenter" cols="6" md="2" offset-md="1" lg="2">
         <b-link class="circle-4 circle flexCenter my-3" href="https://ipropertyclaims.com/#/Home" target="_blank">
             <b-img fluid class="clients roundedCorner" src="/img/home/IPCLogo.png"></b-img>
         </b-link>
